@@ -1,4 +1,4 @@
-##   1. Introduction
+## 1. Introduction
 
 In this project, we use the Faster-RCNN as basic build blocks of source detection algorithm. Meanwhile, since targets with different signal to noise ratios would extend to different scales, we propose a two–step detection strategy. Original images will be zoomed to two images of smaller size: 256×256 pixels (Level-1 image) and 512×512 pixels (level-2 image). Images of 256×256 pixels would be used to detect ultra-bright and bright targets and images of 512 × 512 pixels would be used to detect ordinary targets. In addition, we apply weak restriction conditions to prediction results of each model. Finally, to integrate all detection results, we introduce a random forest based classifier to further screen out false alarms. 
 
@@ -14,7 +14,6 @@ opencv-python
 matplotlib
 photutils
 sklearn
-
 ```
 
 ## 3. Data preprocessing
